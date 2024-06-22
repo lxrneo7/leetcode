@@ -1,13 +1,11 @@
-
-function twoSum(nums, target) {
-    const numMap = {};
-
+var twoSum = function (nums, target) {
     for (let i = 0; i < nums.length; i++) {
-        const complement = target - nums[i];
-        if (numMap[complement] !== undefined) {
-            return [numMap[complement], i];
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[j] === target - nums[i]) {
+                return [i, j];
+            }
         }
-        numMap[nums[i]] = i;
     }
+    // In case there is no solution, return null
     return null;
-}
+};
