@@ -6,6 +6,5 @@ var twoSum = function (nums, target) {
             }
         }
     }
-    // In case there is no solution, return null
     return null;
 };
