@@ -1,7 +1,4 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
+//
 var removeDuplicates = function(nums) {
   var len = nums.length;
   var last = NaN;
