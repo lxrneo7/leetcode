@@ -1,4 +1,4 @@
-class Solution {
+//class Solution {
  public:
   bool containsNearbyDuplicate(vector<int>& nums, int k) {
     unordered_set<int> seen;
@@ -13,3 +13,4 @@ class Solution {
     return false;
   }
 };
+//
